@@ -12,7 +12,7 @@ function addToScreen(input) {
 
 function calculate() {
     try {
-        screen.innerHTML = eval(screen.innerHTML);
+        screen.innerHTML = eval(screen.innerHTML).toFixed(7);
     } catch {
         screen.innerHTML = 'Error';
     }
