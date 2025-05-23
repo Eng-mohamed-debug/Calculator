@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    
+    <!-- Normalizing all properties -->
+    <link rel="stylesheet" href="./normalize.css">
+
+    <!-- Calculator Styling -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen"></div>
+        <div class="buttons">
+            <button onclick="clearScreen()" class="delete-btn"> AC </button>
+            <button onclick="backSpace()" class="delete-btn"> <i class="fa-solid fa-delete-left"></i> </button>
+            <button onclick="addToScreen('/')" class="operator"> / </button>
+            <button onclick="addToScreen('*')" class="operator"> * </button>
+            <button onclick="addToScreen('7')"> 7 </button>
+            <button onclick="addToScreen('8')"> 8 </button>
+            <button onclick="addToScreen('9')"> 9 </button>
+            <button onclick="addToScreen('-')" class="operator"> - </button>
+            <button onclick="addToScreen('4')"> 4 </button>
+            <button onclick="addToScreen('5')"> 5 </button>
+            <button onclick="addToScreen('6')"> 6 </button>
+            <button onclick="addToScreen('+')" class="operator plus"> + </button>
+            <button onclick="addToScreen('1')"> 1 </button>
+            <button onclick="addToScreen('2')"> 2 </button>
+            <button onclick="addToScreen('3')"> 3 </button>
+            <button onclick="addToScreen('0')" class="zero"> 0 </button>
+            <button onclick="addToScreen('.')"> . </button>
+            <button onclick="calculate()" class="operator equal"> = </button>
+        </div>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
